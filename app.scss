@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
+
+$mdc-theme-primary: #5d1049;
+$mdc-theme-surface: #fff;
+$mdc-theme-secondary: #e30425;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+$mdc-theme-on-surface: #fff;
+$extra: #134611;
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+$mdc-typography-font-family: "Reem Kufi";
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/tabs/mdc-tabs";
+@import "@material/typography/mdc-typography";
+
+#webmall-tab-bar {
+  float: left;
+}
+
+
+.webmall-body {
+  padding-top : 124px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.webmall-product-content {
+  padding-top: 24px;
+}
+
+@import "@material/image-list/mdc-image-list";
+.product-list {
+  @include mdc-image-list-masonry-columns(4);
+  overflow: auto;
+}
+
+@import "@material/elevation/mdc-elevation";
+.webmall-top-section {
+  @include mdc-elevation(4);
+  @include mdc-top-app-bar-fill-color($mdc-theme-primary);
+  z-index: 2;
+}
+
+@import "@material/textfield/mdc-text-field";
+.webmall-inner-content {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.webmall-text-field {
+  padding-left: 12px; 
+  padding-top: 12px;
+  @include mdc-text-field-box-fill-color($mdc-theme-primary);
+  @include mdc-text-field-fullwidth-bottom-line-color($mdc-theme-on-primary);
+}
+
+.webmall-search {
+  margin-top: 0px;
+  &.mdc-text-field--focused  {
+    @include mdc-text-field-label-color(on-primary);
+  }
+}
+
+@media only screen and (min-width : 680px) {
+  .webmall-top-section {
+    padding: 0 48px;
+  }
+  .webmall-body {
+    padding: 124px 108px 0;
+  }
+}
+
+.webmall-tab {
+  min-width: inherit;
+  min-height: inherit;
+  display: inline-block;
+  @include mdc-tab-ink-color($mdc-theme-on-primary);
+  @include mdc-tab-bar-indicator-ink-color($mdc-theme-on-primary);
+}
+
+.webmall-tab:hover {
+  @include mdc-tab-ink-color(#fff);
+  @include mdc-tab-bar-indicator-ink-color (#fff);
+}
