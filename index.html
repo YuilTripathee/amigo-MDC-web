@@ -4,11 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WebMall - Featured Items</title>
+  <title>Amigo - online food ordering</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="bundle.css">
+  <style>
+     body {
+         overflow-x: hidden;
+     }
+     .amigo-about {
+         background: url('assets/rbg.jpg') no-repeat;
+         background-size: cover;
+         height: 100%;
+     }
+  </style>
 </head>
 
 <body class="mdc-typography">
@@ -24,38 +34,31 @@
           <!-- navigation tabs section -->
           <div class="webmall-tab-section">
             <nav class="mdc-tab-bar" id="webmall-tab-bar" style="width: auto">
-              <a href="#" class="mdc-tab webmall-tab mdc-tab--active">
-                Featured
+              <a href="menu.html" class="mdc-tab webmall-tab mdc-tab--active">
+                Our menu
+                <span class="mdc-tab__indicator"></span>
+              </a>
+              <a href="index.html" class="mdc-tab webmall-tab">
+                About our food
                 <span class="mdc-tab__indicator"></span>
               </a>
               <a href="#" class="mdc-tab webmall-tab">
-                Work
+                Deals &amp; our app
                 <span class="mdc-tab__indicator"></span>
               </a>
               <a href="#" class="mdc-tab webmall-tab">
-                Play
+                Trending now
                 <span class="mdc-tab__indicator"></span>
               </a>
-              <a href="#" class="mdc-tab webmall-tab">
-                More
+              <a href="login.html" class="mdc-tab webmall-tab">
+                Login/Signup
                 <span class="mdc-tab__indicator"></span>
               </a>
             </nav>
           </div>
         </section>
       </div>
-      <!-- filter section -->
-      <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start webmall-inner-content">
-          <form action="GET" style="width: 100%; padding-bottom: 8px;">
-            <div class="mdc-text-field mdc-text-field--box webmall-search" style="width: 100%">
-              <input type="text" id="my-text-field" class="mdc-text-field__input webmall-text-field">
-              <label class="mdc-floating-label webmall-text-field-label" for="my-text-field">Filter</label>
-              <div class="mdc-line-ripple"></div>
-            </div>
-          </form>
-        </section>
-      </div>
+
     </header>
   </div>
 
@@ -64,110 +67,47 @@
     <!-- navigation drawer -->
     <!-- page content-->
     <div class="webmall-page-content">
-      <!-- masonry type of grid for images -->
-      <div>
-        <!-- product content -->
-        <div class="webmall-product-content">
-            <ul class="mdc-image-list mdc-image-list--masonry product-list">
-                <li class="mdc-image-list__item foo-item">
-                    <img class="mdc-image-list__image" src="assets/ginger-scarf.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Ginger scarf</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/blue-stone-mug.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Blue stone mug</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/cerise-scallop.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Cerise scallop tee</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/chambray-napkins.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Chambray napkins</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/fine-lines.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Fine lines tee</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/garden-strand.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Garden strand</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/gatsby-hat.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Gatsby hat</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/gilt-desk-trio.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Gilt desk trio</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/kitchen-quattro.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Kitchen quattro</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/seabreeze-sweater.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Seabreeze sweater</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/shrug-bag.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Shrug bag</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/stella-sunglasses.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Stella sunglasses</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/surf-and-perf.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Surf and perf shirt</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/vagabond-sack.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Vagabond sack</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/walter-henley.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Walter henley (white)</span>
-                    </div>
-                  </li>
-                  <li class="mdc-image-list__item">
-                    <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-                    <div class="mdc-image-list__supporting">
-                      <span class="mdc-image-list__label">Weave keyring</span>
-                    </div>
-                  </li>
-              </ul>
-        </div>
-      </div>
+        <!-- banner 1 -->
+        <section>
+            <a href="#">
+                <img src="assets/banner1.jpg" alt="banner1" style="width: 100%">
+            </a>
+        </section>
+        <!-- call to action -->
+        <section class="amigo-call-to-action">
+            <div class="amigo-cta-text">
+                <h3>Are you hungry? <span>Order now</span> your favourite food and chill.</h3>
+            </div>
+            <div class="amigo-cta-btn-container">
+                <button class="mdc-button mdc-button--raised next amigo-cta-btn">
+                    Order now
+                </button>
+            </div>
+        </section>
+        <!-- about text -->
+        <section class="amigo-about intro">
+            <div class="intro-body">
+                <div class="about-text">
+                    <h1>Restaurant with you</h1>
+                    <p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde similique officia cupiditate velit. Laboriosam, voluptate doloribus enim neque illum quis est error sunt temporibus autem blanditiis laborum et rem?</span>
+                        <span>Praesentium hic iure repudiandae quos provident voluptas laudantium illum, facere ducimus cum placeat at quae eius aut, amet quod? Quae voluptate rerum similique reprehenderit perferendis provident eum placeat nam saepe.</span>
+                    </p>
+                    <p>
+                        <span>Amet ex animi consequuntur dolorum iste quas eveniet consectetur quae, dicta tempora, nihil placeat ad! Molestias, provident a ipsam voluptatibus quae iusto ratione, beatae sed dolore itaque, tenetur necessitatibus laborum.</span>
+                        <span>Eius quo sunt nihil modi nulla delectus cum unde repellat a magnam hic officiis harum deleniti debitis dolorum dolor beatae ducimus totam reiciendis, iste sint quaerat illum veniam earum? Consequatur?</span>
+                        <span>Tenetur, quasi laudantium. Rem ea nam perferendis natus quibusdam, magnam ipsum facilis dolorem, tempora exercitationem possimus blanditiis aut ipsam quaerat libero nesciunt ab numquam amet in, enim repudiandae minima magni?</span>
+                    </p>
+                    <button class="mdc-button mdc-button--raised next blue-button banner2-btn">
+                        Support
+                    </button>
+                </div>
+                <div class="half-space"></div>
+            </div>
+        </section>
+        <footer class="amigo-footer">
+            <p>Copyright &copy; 2018 Amigo</p>
+        </footer>
     </div>
   </div>
 
