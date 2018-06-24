@@ -1,40 +1,42 @@
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: 'Roboto';
-  margin: 0;
-  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
-}
-
-$mdc-theme-primary: #5d1049;
-$mdc-theme-surface: #fff;
-$mdc-theme-secondary: #e30425;
-$mdc-theme-on-primary: #fff;
-$mdc-theme-on-secondary: #fff;
-$mdc-theme-on-surface: #fff;
-$extra: #134611;
-@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
-$mdc-typography-font-family: "Reem Kufi";
-
-@import "@material/top-app-bar/mdc-top-app-bar";
-@import "@material/tabs/mdc-tabs";
-@import "@material/typography/mdc-typography";
-
+// html, body {
+  //   height: 100%;
+  // }
+  
+  // body {
+    //   font-family: 'Roboto';
+    //   margin: 0;
+    //   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+    // }
+    
+    $mdc-theme-primary: rgba(176, 0, 49, 1);
+    $mdc-theme-surface: #fff;
+    $mdc-theme-secondary: rgba(0, 71, 119, 1);
+    $mdc-theme-on-primary: rgba(250, 250, 255, 1);
+    $mdc-theme-on-secondary: rgba(250, 250, 255, 1);
+    $mdc-theme-on-surface: rgba(48, 52, 63, 1);
+    $other-color: #ff7700;
+    
+    $extra: #134611;
+    @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+    $mdc-typography-font-family: "Reem Kufi";
+    
+    @import "@material/top-app-bar/mdc-top-app-bar";
+    @import "@material/tabs/mdc-tabs";
+    @import "@material/typography/mdc-typography";
+    @import "@material/button/mdc-button";
+    @import "@material/textfield/mdc-text-field";
+    
 #webmall-tab-bar {
   float: left;
 }
 
 
 .webmall-body {
-  padding-top : 124px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top : 60px 0 0;
 }
 
 .webmall-product-content {
-  padding-top: 24px;
+  padding: 24px 64px 0;
 }
 
 @import "@material/image-list/mdc-image-list";
@@ -61,6 +63,12 @@ $mdc-typography-font-family: "Reem Kufi";
   padding-top: 12px;
   @include mdc-text-field-box-fill-color($mdc-theme-primary);
   @include mdc-text-field-fullwidth-bottom-line-color($mdc-theme-on-primary);
+  border-bottom-color: #ccc!important;
+}
+
+.webmall-text-field-label, .webmall-line-ripple {
+  color: #ccc!important;
+  font-weight: bold;
 }
 
 .webmall-search {
@@ -75,7 +83,7 @@ $mdc-typography-font-family: "Reem Kufi";
     padding: 0 48px;
   }
   .webmall-body {
-    padding: 124px 108px 0;
+    padding: 60px 0 0;
   }
 }
 
@@ -85,9 +93,168 @@ $mdc-typography-font-family: "Reem Kufi";
   display: inline-block;
   @include mdc-tab-ink-color($mdc-theme-on-primary);
   @include mdc-tab-bar-indicator-ink-color($mdc-theme-on-primary);
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 .webmall-tab:hover {
   @include mdc-tab-ink-color(#fff);
   @include mdc-tab-bar-indicator-ink-color (#fff);
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
+
+// Login page styles
+
+.header {
+  text-align: center;
+}
+
+.shrine-logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 80px;
+  fill: currentColor;
+}
+
+.username,
+.password {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin: auto;
+}
+
+.button-container button {
+  margin: 3px;
+}
+
+// Home page styles
+
+.home {
+  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+
+.amigo-call-to-action {
+  padding: 38px 64px 100px;
+  font-size: 20px;
+  color: $mdc-theme-surface;
+  width: 100%;
+  background-color: $mdc-theme-secondary;
+}
+
+.amigo-cta-text {
+  width: 80%;
+  float: left;
+  font-weight: light;
+}
+
+.amigo-cta-btn-container {
+  width: 20%;
+  float: right;
+}
+
+.amigo-cta-btn {
+  padding: 20px 27px 34px;
+  margin: 9px 0;
+}
+
+h3 span {
+  color: $other-color;
+  font-weight: bold;
+}
+@import "@material/shape/mixins";
+
+.my-shape-container {
+  @include mdc-shape-angled-corner(#fff, 10px);
+  @include mdc-shape-angled-corner-outline(2px, blue);
+}
+
+.amigo-about {
+  padding:  64px;
+  // background: url('reference/restaurant-bg.jpg')
+
+}
+
+.intro {
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 100vh !important;
+  vertical-align: middle;
+}
+
+.intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.about-text{
+  width:50%
+}
+.half-space{
+  width:50%;
+}
+.blue-button {
+  background-color: $mdc-theme-secondary!important;
+}
+.banner2-btn {
+  margin-top: 25px;
+  font-weight: bold;
+}
+.amigo-footer {
+  text-align: center;
+  background-color: $mdc-theme-on-surface;
+  padding: 10px 0 10px;
+  color: $mdc-theme-on-secondary;
+}
+.webmall-body-menu {
+  padding: 124px 0 0 !important;
+}
+.our-menu {
+  padding: 0 30px 100px !important;
+}
+.amigo-divider {
+  width: 30px;
+  height: 4px;
+  background: $mdc-theme-primary;
+}
+.amigo-food-title {
+  padding : 20px 64px;
+}
+.amigo-food-title h2 {
+  color: $mdc-theme-on-surface;
+}
+.amigo-food-label {
+  width: 100%;
+}
+.amigo-food-label-inner1 {
+  width: 75%;
+}
+.amigo-food-label-inner1 h3,p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.amigo-food-label-inner1 {
+  width: 25%;
+}
+.amigo-discount {
+  margin-left: 5px;
+  font-weight: normal;
+  color: $other-color!important;
 }

@@ -1,9 +1,17 @@
-import {MDCTopAppBar} from '@material/top-app-bar/index';
+// import {MDCTopAppBar} from '@material/top-app-bar/index';
+// import {MDCTextField} from '@material/textfield';
+
+// // Instantiation
+// const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+// const topAppBar = new MDCTopAppBar(topAppBarElement);
+// const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+
+// // alert('JS working properly!!!');
+import {MDCRipple} from '@material/ripple';
 import {MDCTextField} from '@material/textfield';
 
-// Instantiation
-const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDCTopAppBar(topAppBarElement);
-const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+const username = new MDCTextField(document.querySelector('.username'));
+const password = new MDCTextField(document.querySelector('.password'));
 
-// alert('JS working properly!!!');
+new MDCRipple(document.querySelector('.cancel'));
+new MDCRipple(document.querySelector('.next'));
