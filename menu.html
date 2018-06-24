@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amigo - food menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="bundle.css">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body class="mdc-typography">
+  
+  <!-- top bar (with top bar and tabs) -->
+  <div>
+    <!-- top bar -->
+    <header class="mdc-top-app-bar webmall-top-section">
+      <!-- top bar section -->
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+         <img src="assets/fav.png" alt="logo" style="width: 5%">
+          <!-- navigation tabs section -->
+          <div class="webmall-tab-section">
+              <nav class="mdc-tab-bar" id="webmall-tab-bar" style="width: auto">
+                  <a href="menu.html" class="mdc-tab webmall-tab mdc-tab--active">
+                    Our menu
+                    <span class="mdc-tab__indicator"></span>
+                  </a>
+                  <a href="index.html" class="mdc-tab webmall-tab">
+                    About our food
+                    <span class="mdc-tab__indicator"></span>
+                  </a>
+                  <a href="#" class="mdc-tab webmall-tab">
+                    Deals &amp; our app
+                    <span class="mdc-tab__indicator"></span>
+                  </a>
+                  <a href="#" class="mdc-tab webmall-tab">
+                    Trending now
+                    <span class="mdc-tab__indicator"></span>
+                  </a>
+                  <a href="login.html" class="mdc-tab webmall-tab">
+                    Login/Signup
+                    <span class="mdc-tab__indicator"></span>
+                  </a>
+                </nav>
+          </div>
+        </section>
+      </div>
+      <!-- filter section -->
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start webmall-inner-content">
+          <form action="GET" style="width: 100%; padding-bottom: 8px;">
+            <div class="mdc-text-field mdc-text-field--box webmall-search" style="width: 100%">
+              <input type="text" id="my-text-field" class="mdc-text-field__input webmall-text-field">
+              <label class="mdc-floating-label webmall-text-field-label" for="my-text-field">Find your favourite dish...</label>
+              <div class="mdc-line-ripple webmall-line-ripple"></div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </header>
+  </div>
+
+  <!-- so-called (body pary) -->
+  <div class="webmall-body webmall-body-menu">
+    <!-- navigation drawer -->
+    <!-- page content-->
+    <div class="webmall-page-content">
+      <section>
+          <a href="#">
+              <img src="assets/banner2.jpg" alt="banner1" style="width: 100%">
+          </a>
+      </section>
+      <!-- call to action -->
+      <section class="amigo-call-to-action our-menu">
+          <div class="amigo-cta-text">
+              <h1>Our <span>menu</span></h1>
+          </div>
+          <div class="amigo-cta-btn-container" style="display: none;">
+              <button class="mdc-button mdc-button--raised next amigo-cta-btn">
+                  Order now
+              </button>
+          </div>
+      </section>
+      <!-- masonry type of grid for images -->
+      <div>
+        <div class="amigo-food-title">
+          <h2>
+            Burger
+          </h2>
+          <div class="amigo-divider"></div>
+        </div>
+        <!-- product content -->
+        <div class="webmall-product-content">
+            <ul class="mdc-image-list mdc-image-list--masonry product-list">
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food1.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food2.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food3.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food4.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food5.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food6.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food7.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/food8.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+              </ul>
+        </div>
+      </div>
+      <div>
+        <div class="amigo-food-title">
+          <h2>
+            Other foods
+          </h2>
+          <div class="amigo-divider"></div>
+        </div>
+        <!-- product content -->
+        <div class="webmall-product-content">
+            <ul class="mdc-image-list mdc-image-list--masonry product-list">
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish1.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish2.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish3.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish4.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish5.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish6.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish7.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish8.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish9.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+                <li class="mdc-image-list__item foo-item">
+                    <img class="mdc-image-list__image" src="assets/dish10.jpg">
+                    <div class="mdc-image-list__supporting">
+                      <div class="mdc-image-list__label amigo-food-label">
+                        <div class="amigo-food-label-inner1" style="float: left;">
+                          <h3>Hamburger exclusive</h3>
+                          <p>$50 <span class="amigo-discount">20% off</span></p>
+                        </div>
+                        <div class="amigo-food-label-inner2" style="float: right;">
+                            <button class="mdc-button mdc-button--raised">
+                              Add
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>        
+              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="bundle.js" async></script>
+</body>
+
+</html>
